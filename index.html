@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigos - Project Management Tool</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/4c1277de95.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-left">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+      <div class="logo">
+        <img src="/images/logo.png" alt="">
+      </div>
+    </div>
+    <div class="header-middle">
+      <hr>
+      <nav>
+        <a href="/">Dashboard</a>
+        <a href="/" class="header-container-nav-selected">Projects</a>
+        <a href="/">Files</a>
+        <a href="/">People</a>
+        <a href="/">Research</a>
+        <a href="/">Conference Planner</a>
+        <a href="/">Knowledge Base</a>
+      </nav>
+    </div>
+    <div class="header-right">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="bell-icon-container">
+        <i class="fa-regular fa-bell"></i>
+      </div>
+      <i class="fa-solid fa-gear"></i>
+      <div class="header-profile-pic">
+        <img src="/images/profile-pic.webp" alt="header-profile-pic">
+      </div>
+      <div class="header-arrow-icons">
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+        <i class="fa fa-angle-down" aria-hidden="true"></i>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-heading-container">
+      <h1>Project Name</h1>
+      <div>
+        <div>
+          <i class="fa-regular fa-calendar"></i>
+        </div>
+        <div>
+          <i class="fa-solid fa-link"></i>
+        </div>
+      </div>
+    </section>
+    <section class="main-content-container">
+      <nav>
+        <div class="main-content-container-nav-selected">
+          <a href="/">Overview</a>
+        </div>
+        <div>
+          <a href="/">Project Plan</a>
+        </div>
+        <div>
+          <a href="/">Project Goals</a>
+        </div>
+        <div>
+          <a href="/">Project Scope</a>
+        </div>
+        <div>
+          <a href="/">Insight HUB</a>
+        </div>
+        <div>
+          <a href="/">Project Debrief</a>
+        </div>
+        <div>
+          <a href="/">Files</a>
+        </div>
+        <div>
+          <a href="/">Conference Planner</a>
+        </div>
+        <div>
+          <a href="/">News Feed</a>
+        </div>
+        <div>
+          <a href="/">Perspective</a>
+        </div>
+        <div>
+          <a href="/">Finances</a>
+        </div>
+      </nav>
+      <div class="main-content-summary-container">
+        <div class="main-content-summary blue">
+          <div class="summary-left-part">
+            <div class="summary-left-part-icon">
+              <i class="fa-solid fa-rss"></i>
+            </div>
+            <div class="summary-left-part-text">
+              <h3>12</h3>
+              <p>Latest News</p>
+            </div>
+          </div>
+          <div class="summary-right-part">
+            <span>NEW</span>
+          </div>
+        </div>
+        <div class="main-content-summary red">
+          <div class="summary-left-part">
+            <div class="summary-left-part-icon">
+              <i class="fa-regular fa-copy"></i>
+            </div>
+            <div class="summary-left-part-text">
+              <h3>34</h3>
+              <p>Deliverables</p>
+            </div>
+          </div>
+          <div class="summary-right-part">
+            <span>NEW</span>
+          </div>
+        </div>
+        <div class="main-content-summary cyan">
+          <div class="summary-left-part">
+            <div class="summary-left-part-icon">
+              <i class="fa-regular fa-bell"></i>
+            </div>
+            <div class="summary-left-part-text">
+              <h3>5</h3>
+              <p>Alerts</p>
+            </div>
+          </div>
+          <div class="summary-right-part">
+            <span>NEW</span>
+          </div>
+        </div>
+        <div class="main-content-summary orange">
+          <div class="summary-left-part">
+            <div class="summary-left-part-icon">
+              <i class="fa-solid fa-indian-rupee-sign"></i>
+            </div>
+            <div class="summary-left-part-text">
+              <h3>14</h3>
+              <p>Transactions</p>
+            </div>
+          </div>
+          <div class="summary-right-part">
+            <span>NEW</span>
+          </div>
+        </div>
+      </div>
+      <div class="main-content-body-container">
+        <div class="latest-news-container">
+          <div class="latest-news-heading-container">
+            <h1>Latest News</h1>
+            <p>View more</p>
+          </div>
+          <div class="latest-news-filter-container">
+            <i class="fa-solid fa-square-check"></i>
+            <select name="news-type" id="news-type">
+              <option value="all-fees">All feeds</option>
+              <option value="all-fees">Today's feeds</option>
+            </select>
+          </div>
+          <ul class="latest-news-list">
+            <li>
+              <p class="news-tags"><span>Hardware and Software</span></p>
+              <p class="news-title">The approval of the watch as a heart monitoring wearable device was a strong
+                incentive for customes</p>
+              <p class="news-content">Recently Apple announced two healthcare feature for the Apple watch; a single lead
+                ECG and fail detection</p>
+              <p class="news-publish-timing">04:13 PM 2/12/2019</p>
+            </li>
+            <li>
+              <p class="news-tags"><span>Health Technology</span></p>
+              <p class="news-title">Tech-integrated homes: From smart kitchens to intelligent security; exploring latest
+                trends shaping modern living</p>
+              <p class="news-content">From automated lighting to voice-controlled assistants, check out the latest
+                trends in home technology that are transforming houses into intelligent spaces.</p>
+              <p class="news-publish-timing">04:13 PM 2/12/2019</p>
+            </li>
+            <li>
+              <p class="news-tags"><span>Healthcare</span></p>
+              <p class="news-title">Chinese scientists develop cure for diabetes, insulin patient becomes medicine-free
+                in just 3 months</p>
+              <p class="news-content">In a significant medical milestone, Chinese scientists have successfully cured a
+                patient's diabetes using a groundbreaking cell therapy. This pioneering treatment was developed by a
+                team from Shanghai Changzheng Hospital, the Centre for Excellence in Molecular Cell Science under the
+                Chinese Academy of Sciences, and Renji Hospital, and was detailed in the journal Cell Discovery on April
+                30.</p>
+              <p class="news-publish-timing">04:13 PM 2/12/2019</p>
+            </li>
+            <li>
+              <p class="news-tags"><span>Hardware and Software</span></p>
+              <p class="news-title">The approval of the watch as a heart monitoring wearable device was a strong
+                incentive for customes</p>
+              <p class="news-content">Recently Apple announced two healthcare feature for the Apple watch; a single lead
+                ECG and fail detection</p>
+              <p class="news-publish-timing">04:13 PM 2/12/2019</p>
+            </li>
+          </ul>
+        </div>
+        <div class="explore-project-container">
+          <h1>Explore Project</h1>
+          <div>
+            <div class="project-goals">
+              <i class="fa-solid fa-bullseye"></i>
+              <h3>Project Goals</h3>
+            </div>
+            <div class="news-feed">
+              <i class="fa-solid fa-rss"></i>
+              <h3>News Feed</h3>
+            </div>
+            <div class="project-plan">
+              <i class="fa-solid fa-calendar-days"></i>
+              <h3>Project Plan</h3>
+            </div>
+            <div class="research-scope">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h3>Research Scope</h3>
+            </div>
+          </div>
+        </div>
+        <div class="notes-container">
+          <div class="notes-heading-container">
+            <h1>Notes</h1>
+            <p>View all</p>
+          </div>
+          <div class="add-notes-input-container">
+            <input type="text" placeholder="Add Notes">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="notes-body-container">
+            <ul>
+              <li>
+                <div class="notes-list-item-header">
+                  <div class="notes-list-item-header-left-part">
+                    <img src="./images/note-image.jpg" alt="rob-stark-profile-pic">
+                    <span class="notes-list-item-name">Rob Stark</span> <span class="notes-list-item-time">9:15
+                      pm</span>
+                  </div>
+                  <div class="notes-list-item-header-right-part">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="notes-list-item-right-part"></div>
+                </div>
+                <div class="notes-list-item-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In a pariatur repellat magni, qui impedit
+                    voluptatum corrupti labore incidunt recusandae, vel dolores sunt aspernatur accusantium numquam,
+                    esse
+                    maxime dolorum earum.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="notes-list-item-header">
+                  <div class="notes-list-item-header-left-part">
+                    <img src="./images/note-image.jpg" alt="rob-stark-profile-pic">
+                    <span class="notes-list-item-name">John Wick</span> <span class="notes-list-item-time">5:35
+                      pm</span>
+                  </div>
+                  <div class="notes-list-item-header-right-part">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                  <div class="notes-list-item-right-part"></div>
+                </div>
+                <div class="notes-list-item-content">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In a pariatur repellat magni, qui impedit
+                    voluptatum corrupti labore incidunt recusandae, vel dolores sunt aspernatur accusantium numquam,
+                    esse
+                    maxime dolorum earum.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="project-details-container">
+          <h1>Project Details</h1>
+          <div>
+            <div class="stakeholders-list-container">
+              <h4>Stakeholders</h4>
+              <ul>
+                <li>Jon Snow</li>
+                <li>Arya Stark</li>
+                <li>Ned Stark</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Project Summary</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam nihil corporis
+                exercitationem? Vel, consectetur enim quidem aspernatur exercitationem sapiente ab dignissimos non ipsam
+                beatae in. Alias quisquam reprehenderit deserunt?
+                Expedita amet libero quo, similique magni ipsam itaque, et voluptates perspiciatis eveniet in error
+                fugit? Ullam iusto enim nobis necessitatibus est possimus, quos facilis, nemo molestias ipsum
+                reprehenderit modi rerum.
+              </p>
+            </div>
+            <div>
+              <h4>Objectives</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita quisquam nihil corporis
+                exercitationem? Vel, consectetur enim quidem aspernatur exercitationem sapiente ab dignissimos non ipsam
+                beatae in. Alias quisquam reprehenderit deserunt?
+                Expedita amet libero quo, similique magni ipsam itaque, et voluptates perspiciatis eveniet in error
+                fugit? Ullam iusto enim nobis necessitatibus est possimus, quos facilis, nemo molestias ipsum
+                reprehenderit modi rerum.
+              </p>
+            </div>
+            <div class="project-details-documents">
+              <h4>Documents</h4>
+              <ul>
+                <li>
+                  <i class="fa-regular fa-file-pdf"></i> <span>Item list.pdf</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file"></i> <span>Project proposal.doc</span>
+                </li>
+                <li>
+                  <i class="fa-regular fa-file-zipper"></i> <span>Project resources.zip</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
