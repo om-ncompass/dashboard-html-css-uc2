@@ -10,7 +10,6 @@ body {
     "lucida grande", "helvetica neue", helvetica, "fira sans", roboto, noto, "droid sans",
     cantarell, oxygen, ubuntu, "franklin gothic medium", "century gothic", "liberation sans", sans-serif;
   overflow-x: hidden;
-  font-size: 16px;
   background-color: #f9fafa;
   box-sizing: border-box;
 }
@@ -80,27 +79,16 @@ header hr {
   padding-top: 0.4rem;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.header-middle {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.header-middle>nav {
+.header-left,
+.header-middle,
+.header-middle>nav,
+.header-right {
   display: flex;
   align-items: center;
   gap: 1.5rem;
 }
 
 .header-right {
-  display: flex;
-  align-items: center;
   gap: 1rem;
 }
 
@@ -217,6 +205,8 @@ main {
 .main-content-summary {
   display: flex;
   justify-content: space-between;
+  /* width: 100%;
+  gap: 2rem; */
   min-width: calc(100%/4 - 2rem);
   /* gap: 4rem; */
   padding: 1rem 1.6rem;
@@ -544,6 +534,7 @@ main {
 }
 
 .add-notes-input-container>input {
+  /* width: 90%; */
   width: calc(100% - 21px);
   padding: 0.4rem;
   color: var(--primary-color);
@@ -553,6 +544,7 @@ main {
 }
 
 .add-notes-input-container>i {
+  /* width: 10%; */
   padding: 0.6rem;
   background-color: var(--blue);
   color: var(--white);
