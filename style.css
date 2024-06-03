@@ -216,7 +216,9 @@ main {
 
 .main-content-summary {
   display: flex;
-  gap: 4rem;
+  justify-content: space-between;
+  min-width: calc(100%/4 - 2rem);
+  /* gap: 4rem; */
   padding: 1rem 1.6rem;
   background-color: var(--white);
   border-left: 4px solid var(--blue);
