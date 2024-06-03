@@ -21,6 +21,25 @@ input {
   all: unset;
 }
 
+/* ROOT VARIABLES */
+
+:root {
+  --primary-color: #7c7e8a;
+  --secondary-color: #3ba6fd;
+  --white: #fff;
+  --blue: #2d9dfd;
+  --blue-light: #88c7ff;
+  --red: #f15c42;
+  --red-light: #ed9181;
+  --cyan: #36b9ae;
+  --cyan-light: #6ee3d9;
+  --orange: #edad41;
+  --orange-light: #eac078;
+
+  --box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  --box-shadow-light: rgb(208, 207, 207) 0px 2px 4px 0px;
+}
+
 /* HEADER */
 
 header {
@@ -29,8 +48,8 @@ header {
   align-items: center;
   vertical-align: middle;
   padding: 0.6rem 1.5rem;
-  color: #7c7e8a;
-  background-color: #fff;
+  color: var(--primary-color);
+  background-color: var(--white);
 }
 
 header a {
@@ -53,7 +72,7 @@ header hr {
 }
 
 .header-container-nav-selected {
-  color: #3ba6fd;
+  color: var(--secondary-color);
 }
 
 .logo img {
@@ -139,10 +158,10 @@ main {
 }
 
 .main-heading-container>div>div {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 0.3rem 0.4rem;
   border-radius: 8px;
-  box-shadow: rgb(208, 207, 207) 0px 2px 4px 0px;
+  box-shadow: var(--box-shadow-light);
   cursor: pointer;
 }
 
@@ -169,7 +188,7 @@ main {
 .main-content-container>nav>div>a {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #7c7e8a;
+  color: var(--primary-color);
   cursor: pointer;
 }
 
@@ -182,7 +201,7 @@ main {
   position: absolute;
   top: 165%;
   left: 0%;
-  background-color: #2d9dfd;
+  background-color: var(--blue);
   width: 100%;
   height: 3px;
 }
@@ -199,8 +218,8 @@ main {
   display: flex;
   gap: 4rem;
   padding: 1rem 1.6rem;
-  background-color: #fff;
-  border-left: 4px solid #2d9dfd;
+  background-color: var(--white);
+  border-left: 4px solid var(--blue);
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -208,7 +227,7 @@ main {
 
 .main-content-summary:hover {
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: var(--box-shadow);
 }
 
 .summary-left-part {
@@ -218,26 +237,26 @@ main {
 }
 
 .summary-left-part-icon {
-  border: 1px solid #88c7ff;
+  border: 1px solid var(--blue);
   padding: 0.2rem;
   border-radius: 100%;
 }
 
 .summary-left-part-icon>i {
   padding: 0.4rem;
-  background-color: #2d9dfd;
-  border: 1px solid #88c7ff;
+  background-color: var(--blue);
+  border: 1px solid var(--blue-light);
   border-radius: 100%;
 }
 
 .summary-left-part-text>p {
-  color: #7c7e8a;
+  color: var(--primary-color);
   font-size: small;
 }
 
 .summary-right-part>span {
   background-color: #dcedfa;
-  color: #7c7e8a;
+  color: var(--primary-color);
   font-size: x-small;
   padding: 0.2rem 0.4rem;
   border: 1px solid #a4d5fc;
@@ -245,42 +264,42 @@ main {
 }
 
 .red {
-  border-left: 4px solid #f15c42;
+  border-left: 4px solid var(--red);
 }
 
 .red .summary-left-part-icon {
-  border: 1px solid #f15c42;
+  border: 1px solid var(--red);
 }
 
 .red .summary-left-part-icon>i {
-  background-color: #f15c42;
-  border: 1px solid #ed9181;
+  background-color: var(--red);
+  border: 1px solid var(--red-light);
 }
 
 .cyan {
-  border-left: 4px solid #36b9ae;
+  border-left: 4px solid var(--cyan);
 }
 
 .cyan .summary-left-part-icon {
-  border: 1px solid #36b9ae;
+  border: 1px solid var(--cyan);
 }
 
 .cyan .summary-left-part-icon>i {
-  background-color: #36b9ae;
-  border: 1px solid #6ee3d9;
+  background-color: var(--cyan);
+  border: 1px solid var(--cyan-light);
 }
 
 .orange {
-  border-left: 4px solid #edad41;
+  border-left: 4px solid var(--orange);
 }
 
 .orange .summary-left-part-icon {
-  border: 1px solid #edad41;
+  border: 1px solid var(--orange);
 }
 
 .orange .summary-left-part-icon>i {
-  background-color: #edad41;
-  border: 1px solid #eac078;
+  background-color: var(--orange);
+  border: 1px solid var(--orange-light);
 }
 
 /*  main content body container */
@@ -308,7 +327,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #fff;
+  background-color: var(--white);
   padding: 1rem 1.5rem;
 }
 
@@ -323,14 +342,14 @@ main {
 }
 
 .latest-news-heading-container>p {
-  color: #2d9dfd;
+  color: var(--blue);
   font-size: small;
   font-weight: 600;
   cursor: pointer;
 }
 
 .latest-news-filter-container {
-  border: 1px solid #7c7e8a;
+  border: 1px solid var(--primary-color);
   width: fit-content;
   padding: 0.2rem 1rem;
   text-align: center;
@@ -339,14 +358,14 @@ main {
 }
 
 .latest-news-filter-container>i {
-  color: #36b9ae;
+  color: var(--cyan);
   font-size: 1.2rem;
   border-radius: 8px;
 }
 
 .latest-news-filter-container>select {
   all: unset;
-  color: #7c7e8a;
+  color: var(--primary-color);
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0 1rem;
@@ -358,7 +377,7 @@ main {
   top: -45%;
   left: 85%;
   font-size: 1.5rem;
-  color: #7c7e8a;
+  color: var(--primary-color);
   font-weight: 600;
 }
 
@@ -377,7 +396,7 @@ main {
 }
 
 .news-tags>span {
-  color: #2d9dfd;
+  color: var(--blue);
   background-color: #c6e4ff;
   width: fit-content;
   padding: 0.2rem 1rem;
@@ -404,15 +423,15 @@ main {
 }
 
 .news-title:hover {
-  color: #2d9dfd;
+  color: var(--blue);
 }
 
 .news-content {
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 .news-publish-timing {
-  color: #7c7e8a;
+  color: var(--primary-color);
   font-size: small;
 }
 
@@ -421,7 +440,7 @@ main {
 .explore-project-container {
   grid-area: explore-project;
   padding: 1rem 1.5rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .explore-project-container>h1 {
@@ -445,27 +464,28 @@ main {
 
 .explore-project-container>div>div:hover {
   transform: scale(1.1);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: var(--box-shadow);
 }
 
 .explore-project-container>div>div>h3 {
-  color: #fff;
+  color: var(--white);
   font-size: 1rem;
   font-weight: 500;
 }
 
 .explore-project-container>div>div>i {
   font-size: x-large;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 1rem;
 }
 
 .project-goals {
-  background-color: #2d9dfd;
+  background-color: var(--blue);
+  opacity: 0.9;
   /* position: relative; */
 }
 
-/* .project-goals::after {
+/* .project-goals::before {
   content: '\f140';
   font-family: 'FontAwesome';
   position: absolute;
@@ -473,18 +493,19 @@ main {
   color: #77c2ff;
   top: 40%;
   left: 60%;
+  z-index: -1;
 } */
 
 .news-feed {
-  background-color: #edad41;
+  background-color: var(--orange);
 }
 
 .project-plan {
-  background-color: #36b9ae;
+  background-color: var(--cyan);
 }
 
 .research-scope {
-  background-color: #7c7e8a;
+  background-color: var(--primary-color);
 }
 
 /* Notes section */
@@ -492,7 +513,7 @@ main {
 .notes-container {
   grid-area: notes;
   padding: 1rem 1.5rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .notes-heading-container {
@@ -507,7 +528,7 @@ main {
 }
 
 .notes-heading-container>p {
-  color: #2d9dfd;
+  color: var(--blue);
   font-size: small;
   font-weight: 600;
   cursor: pointer;
@@ -523,16 +544,16 @@ main {
 .add-notes-input-container>input {
   width: 87%;
   padding: 0.4rem;
-  color: #7c7e8a;
-  border: 1px solid #7c7e8a;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-right: 0;
   border-radius: 4px 0 0 4px
 }
 
 .add-notes-input-container>i {
   padding: 0.6rem;
-  background-color: #2d9dfd;
-  color: #fff;
+  background-color: var(--blue);
+  color: var(--white);
   border-radius: 0 4px 4px 0;
 }
 
@@ -567,7 +588,7 @@ main {
 }
 
 .notes-list-item-time {
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 .notes-list-item-header-right-part {
@@ -578,7 +599,7 @@ main {
 .notes-list-item-content {
   margin-top: 0.5rem;
   font-size: 0.9rem;
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 /* Project details section */
@@ -586,7 +607,7 @@ main {
 .project-details-container {
   grid-area: project-details;
   padding: 1rem 1.5rem;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .project-details-container>h1 {
@@ -598,7 +619,7 @@ main {
 }
 
 .project-details-container>div>div {
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 .project-details-container>div>div>h4 {
@@ -616,12 +637,12 @@ main {
   -webkit-box-orient: vertical;
   margin: 0.5rem 0;
   font-size: 0.9rem;
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 .project-details-container>div>div>ul {
   font-size: 0.9rem;
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 .project-details-documents i {
@@ -629,15 +650,15 @@ main {
 }
 
 .fa-file-pdf {
-  color: #f15c42;
+  color: var(--red);
 }
 
 .fa-file {
-  color: #2d9dfd;
+  color: var(--blue);
 }
 
 .fa-file-zipper {
-  color: #7c7e8a;
+  color: var(--primary-color);
 }
 
 /* for explore porject section... coulcnt apply this using class name*/
