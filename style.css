@@ -542,7 +542,7 @@ main {
 }
 
 .add-notes-input-container>input {
-  width: 87%;
+  width: calc(100% - 21px);
   padding: 0.4rem;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
@@ -730,6 +730,11 @@ MEDIA QUERIES FOR RESPONSIVENESS
   .main-content-body-container {
     display: flex;
     flex-direction: column;
+  }
+
+  .explore-project-container>div>div:hover,
+  .main-content-summary:hover {
+    transform: scale(1.05);
   }
 
 }
