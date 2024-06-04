@@ -452,6 +452,8 @@ main {
   text-align: center;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  opacity: 0.9;
+  position: relative;
 }
 
 .explore-project-container>div>div:hover {
@@ -471,33 +473,61 @@ main {
   margin-bottom: 1rem;
 }
 
-.project-goals {
-  background-color: var(--blue);
-  opacity: 0.9;
-  /* position: relative; */
-}
-
-/* .project-goals::before {
-  content: '\f140';
+.project-goals::before,
+.news-feed::before,
+.project-plan::before,
+.research-scope::before {
   font-family: 'FontAwesome';
   position: absolute;
-  font-size: 6rem;
-  color: #77c2ff;
   top: 40%;
-  left: 60%;
+  left: 70%;
   z-index: -1;
-} */
+}
+
+.project-goals {
+  background-color: var(--blue);
+}
+
+.project-goals::before {
+  content: '\f140';
+  font-size: 6rem;
+  color: var(--blue-light);
+  clip: rect(0px, 51px, 56px, -1px);
+}
 
 .news-feed {
   background-color: var(--orange);
+}
+
+.news-feed::before {
+  content: '\f09e';
+  font-size: 4rem;
+  top: 46%;
+  color: var(--orange-light);
+  clip: rect(0px, 70px, 50px, 0px);
 }
 
 .project-plan {
   background-color: var(--cyan);
 }
 
+.project-plan::before {
+  content: '\f073';
+  font-size: 4rem;
+  color: var(--cyan-light);
+  clip: rect(0px, 50px, 56px, 0px);
+}
+
 .research-scope {
   background-color: var(--primary-color);
+}
+
+.research-scope::before {
+  content: '\f002';
+  font-size: 4rem;
+  top: 42%;
+  color: #a3a5ad;
+  clip: rect(0px, 50px, 54px, 0px);
 }
 
 /* Notes section */
@@ -729,6 +759,20 @@ MEDIA QUERIES FOR RESPONSIVENESS
   .explore-project-container>div>div:hover,
   .main-content-summary:hover {
     transform: scale(1.05);
+  }
+
+  .project-goals::before,
+  .news-feed::before,
+  .project-plan::before,
+  .research-scope::before {
+    top: 40%;
+    left: 60%;
+  }
+
+  .news-feed::before,
+  .project-plan::before,
+  .research-scope::before {
+    top: 42%;
   }
 
 }
