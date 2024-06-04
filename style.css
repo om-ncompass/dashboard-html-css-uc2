@@ -49,6 +49,9 @@ header {
   padding: 0.6rem 1.5rem;
   color: var(--primary-color);
   background-color: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 header a {
